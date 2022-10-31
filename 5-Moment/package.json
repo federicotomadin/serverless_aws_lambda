@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "moment-timezone": "^0.5.38"
+  },
+  "devDependencies": {
+    "serverless-offline": "^11.2.1",
+    "serverless-plugin-include-dependencies": "^5.0.0"
+  }
+}

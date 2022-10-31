@@ -1,0 +1,23 @@
+service: Moment
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins: 
+  serverless-offline 
+  serverless-plugin-include-dependencies
+
+package: 
+  exclude: 
+    node_modules/**
+
+functions:
+  GetMoment:
+    handler: handler.GetMoment
+    events:
+      - httpApi: 
+          path: /GetMoment
+          method: get
